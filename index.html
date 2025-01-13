@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panto</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="./assets/images/Panto.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <header>
+        <div class="container header-adds">
+
+            <b>Panto</b>
+            <nav class="header-nav">
+                <ul>
+                    <div>
+
+                        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+                            class="text-white font-['Gilroy-Medium'] font-[18px] rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
+                            type="button">Furniture <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg>
+                        </button>
+                        <div id="dropdown" class="z-10 hidden divide-y  rounded-lg shadow w-44 ">
+                            <ul class="py-2 text-sm flex flex-col gap-[10px] text-center font-['Gilroy-Medium'] font-[18px] text-gray-700 hover:text-[#FF9900]"
+                                aria-labelledby="dropdownDefaultButton">
+                                <li>
+                                    <a href="#" class="block px-4 py-2  text-white hover:text-[#FF9900]">Shop</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 text-white hover:text-[#FF9900]">About</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2  text-white hover:text-[#FF9900]">Contact</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2  text-white hover:text-[#FF9900] ">Sign
+                                        out</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <li>
+                        Shop
+                    </li>
+                    <li>
+                        About Us
+                    </li>
+                    <li>
+                        Contact
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <img src="./assets/icons/Bag.png" alt="">
+                <button>0</button>
+
+            </div>
+        </div>
+
+        <div class="container header-search">
+            <h1>
+                Make your interior more
+                minimalistic & modern
+            </h1>
+            <p>
+                Turn your room with panto into a lot more minimalist and modern with ease and speed
+            </p>
+
+            <div class="search">
+                <input type="text" placeholder="Search furniture">
+                <div class="search-img">
+                    <img src="./assets/icons/Search.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <div class="boxss">
+            <div class="boxtest">
+
+            </div>
+        </div>
+        <div class="boxss boxss2">
+            <div class="boxtest">
+
+            </div>
+        </div>
+        <div class="boxss boxss3">
+            <div class="boxtest">
+
+            </div>
+        </div>
+        <div id="button" class="boxss boxss4">
+            <div class="boxtest">
+
+            </div>
+            <div class="popup" id="popup">
+                <div class="content">
+                    <div class="circle orange"></div>
+                    <div class="circle blue"></div>
+                    <div class="circle gray"></div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </header>
+    <main>
+        <section class="section-1">
+
+            <h2>Why
+                Choosing Us
+            </h2>
+
+            <div>
+
+                <div id="workspace-choice">
+                    <b>Luxury facilities</b>
+                    <p id="description">The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities...
+                        </p>
+                    <a href="#" id="more-info-btn">More Info →</a>
+                </div>
+                <div id="more-info" style="display: none;">
+                    <b>Luxury facilities</b>
+                    <p>We offer a wide variety of workspaces ranging from private offices to open co-working spaces. You
+                        can
+                        select the one that fits your needs best from our list of options and get a quote.</p>
+                    <button id="done-info-btn">Done info →</button>
+                </div>
+            </div>
+            <div>
+
+                <div  id="workspace-choice2">
+                    <b>Affordable Price</b>
+                    <p id="description">You can get a workspace of the highst quality at an affordable price and still enjoy the facilities that are oly here...
+                        </p>
+                    <a href="#" id="more-info-btn2">More Info →</a>
+                </div>
+                <div id="more-info2" style="display: none;">
+                    <b>Affordable Price</b>
+                    <p>We offer a wide variety of workspaces ranging from private offices to open co-working spaces. You can
+                        select the one that fits your needs best from our list of options and get a quote.</p>
+                    <button id="done-info-btn2">Done info →</button>
+                </div>
+            </div>
+            <div>
+
+                <div id="workspace-choice3">
+                    <b>Many Choices</b>
+                    <p id="description">We provide many unique workspace choices so that you can choose the workspace to
+                        your liking...</p>
+                    <a href="#" id="more-info-btn3">More Info →</a>
+                </div>
+                <div id="more-info3" style="display: none;">
+                    <b>Many Choices</b>
+                    <p>We offer a wide variety of workspaces ranging from private offices to open co-working spaces. You
+                        can
+                        select the one that fits your needs best from our list of options and get a quote.</p>
+                    <button id="done-info-btn3">Done info →</button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/add.js"></script>
+</body>
+
+</html>
