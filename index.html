@@ -8,8 +8,37 @@
     <link rel="stylesheet" href="./style/style.css">
     <link rel="shortcut icon" href="./assets/images/Panto.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 </head>
+<style>
+    .add-to-cart {
+        margin-top: 10px;
+        display: inline-block;
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px;
+        border-radius: 50%;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .cart-counter {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color: #007bff;
+        color: #fff;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+</style>
 
 <body>
     <header>
@@ -61,7 +90,7 @@
             </nav>
             <div class="header-icons">
                 <img src="./assets/icons/Bag.png" alt="">
-                <button>0</button>
+                <button class="cart-counter">0</button>
 
             </div>
         </div>
@@ -126,8 +155,9 @@
 
                 <div id="workspace-choice">
                     <b>Luxury facilities</b>
-                    <p id="description">The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities...
-                        </p>
+                    <p id="description">The advantage of hiring a workspace with us is that givees you comfortable
+                        service and all-around facilities...
+                    </p>
                     <a href="#" id="more-info-btn">More Info →</a>
                 </div>
                 <div id="more-info" style="display: none;">
@@ -140,15 +170,17 @@
             </div>
             <div>
 
-                <div  id="workspace-choice2">
+                <div id="workspace-choice2">
                     <b>Affordable Price</b>
-                    <p id="description">You can get a workspace of the highst quality at an affordable price and still enjoy the facilities that are oly here...
-                        </p>
+                    <p id="description">You can get a workspace of the highst quality at an affordable price and still
+                        enjoy the facilities that are oly here...
+                    </p>
                     <a href="#" id="more-info-btn2">More Info →</a>
                 </div>
                 <div id="more-info2" style="display: none;">
                     <b>Affordable Price</b>
-                    <p>We offer a wide variety of workspaces ranging from private offices to open co-working spaces. You can
+                    <p>We offer a wide variety of workspaces ranging from private offices to open co-working spaces. You
+                        can
                         select the one that fits your needs best from our list of options and get a quote.</p>
                     <button id="done-info-btn2">Done info →</button>
                 </div>
@@ -171,11 +203,438 @@
             </div>
 
         </section>
+        <section class="section-2">
+            <div class="container section-2">
+                <h4>Best Selling Product</h4>
+                <div class="card-top">
+                    <button class="card-top-title" data-filter="Chair">Chair</button>
+                    <button class="card-top-title" data-filter="Beds">Beds</button>
+                    <button class="card-top-title" data-filter="Sofa">Sofa</button>
+                    <button class="card-top-title" data-filter="Lamp">Lamp</button>
+                </div>
+                <div class="cards">
+
+                    <div class="card ">
+                        <div class="card-img">
+                            <img class="card-imgs" src="./assets/images/Group 3742.png" alt="">
+                        </div>
+                        <div class="card-header">
+                            <p>
+                                Chair
+                            </p>
+                            <p>Sakarias Armchair</p>
+                            <img src="./assets/images/Group 172.png" alt="">
+                            <div class="card-bottom">
+                                <b>
+                                    $
+                                    392
+                                </b>
+                                <button class="add-to-cart"><img src="./assets/icons/bx_bx-plus.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card ">
+                        <div class="card-img">
+                            <img class="card-imgs" src="./assets/images/Group 3742 (1).png" alt="">
+                        </div>
+                        <div class="card-header">
+                            <p>
+                                Chair
+                            </p>
+                            <p>Baltsar Chair</p>
+                            <img src="./assets/images/Group 172.png" alt="">
+                            <div class="card-bottom">
+                                <b>
+                                    $
+                                    299
+                                </b>
+                                <button class="add-to-cart"><img src="./assets/icons/bx_bx-plus.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card ">
+                        <div class="card-img">
+                            <img class="card-imgs" src="./assets/images/Group 3742 (2).png" alt="">
+                        </div>
+                        <div class="card-header">
+                            <p>
+                                Chair
+                            </p>
+                            <p>Anjay Chair</p>
+                            <img src="./assets/images/Group 172.png" alt="">
+                            <div class="card-bottom">
+                                <b>
+                                    $
+                                    519
+                                </b>
+                                <button class="add-to-cart"><img src="./assets/icons/bx_bx-plus.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card ">
+                        <div class="card-img">
+                            <img class="card-imgs" src="./assets/images/Group 3742 (3).png" alt="">
+                        </div>
+                        <div class="card-header">
+                            <p>
+                                Chair
+                            </p>
+                            <p>Nyantuy Chair</p>
+                            <img src="./assets/images/Group 172.png" alt="">
+                            <div class="card-bottom">
+                                <b>
+                                    $
+                                    921
+                                </b>
+                                <button class="add-to-cart"><img src="./assets/icons/bx_bx-plus.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-all view">
+                    <button>View All →</button>
+                </div>
+        </section>
+        <section class="section-3 container">
+            <div>
+                <img class="imggss" src="./assets/images/Rectangle 1446@2x.png" alt="">
+                <div class="clon-left">
+
+                </div>
+                <div class="clon-right">
+
+                </div>
+            </div>
+            <div class="section-3-text">
+                <p class="section-3-p">experiences</p>
+                <b>
+                    we provide you the best experience
+                </b>
+                <p class="section-3-p2">
+                    You don’t have to worry about the result because all of these interiors are made by people who are
+                    professionals in their fields with an elegant and lucurious style and with premium quality materials
+                </p>
+                <button>View All →</button>
+
+            </div>
+
+        </section>
+        <section class="section-4 container ">
+            <div class="section-3-text">
+                <p class="section-3-p">Materials</p>
+                <b>
+                    Very serious materials for making furniture
+                </b>
+                <p class="section-3-p2">
+                    Because panto was very serious about designing furniture for our environment, using a very expensive
+                    and famous capital but at a relatively low price
+                </p>
+                <button>More Info →</button>
+
+            </div>
+            <div class="box-4">
+                <div class="box-4-img">
+                    <img class="img-2" src="./assets/images/Rectangle 1450.png" alt="">
+                    <img class="img-3" src="./assets/images/Group 48095419.png" alt="">
+                </div>
+                <img class="img-4" src="./assets/images/Rectangle 1446.png" alt="">
+            </div>
+
+
+        </section>
+        <section class="section-5 container">
+            <p>
+                Testimonials
+            </p>
+            <h5>Our Client Reviews</h5>
+            <div class=".body">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-slide0">
+
+                                <div class="swiper-slide2">
+
+                                    <img class="img" src="./assets/images/unsplash__HqHX3LBN18.png" alt="">
+                                    <div class="swiper-slide-text">
+                                        <img src="./assets/images/Group 48095423.png" alt="">
+                                        <b>
+                                            Bang Upin
+                                        </b>
+                                        <span>
+                                            Pedagang Asongan
+                                        </span>
+                                        <p>
+                                            “Terimakasih banyak, kini ruanganku menjadi lebih mewah dan terlihat mahal“
+                                        </p>
+                                        <img class="imgs" src="./assets/images/Group 48095424.png" alt="">
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide2">
+
+                                    <img class="img" src="./assets/images/unsplash_JaXs8Tk5Iww.png" alt="">
+                                    <div class="swiper-slide-text2">
+                                        <img src="./assets/images/Group 48095423 (1).png" alt="">
+                                        <b>
+                                            Ibuk Sukijan
+                                        </b>
+                                        <span>
+                                            Ibu Rumah Tangga
+                                        </span>
+                                        <p>
+                                            “Makasih Panto, aku sekarang berasa tinggal di apartment karena
+                                            barang-barang yang terlihat mewah“
+                                        </p>
+                                        <img class="imgs" src="./assets/images/Group 48095424.png" alt="">
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide2">
+
+                                    <img class="img" src="./assets/images/unsplash_h2_3dL9yLpU.png" alt="">
+                                    <div class="swiper-slide-text3">
+                                        <img src="./assets/images/Group 48095423 (2).png" alt="">
+                                        <b>
+                                            Bang Upin
+                                        </b>
+                                        <span>
+                                            Pedagang Asongan
+                                        </span>
+                                        <p>
+                                            “Terimakasih banyak, kini ruanganku menjadi lebih mewah dan terlihat mahal“
+                                        </p>
+                                        <img class="imgs" src="./assets/images/Group 48095424.png" alt="">
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide0">
+
+                                <div class="swiper-slide2">
+
+                                    <img class="img" src="./assets/images/unsplash__HqHX3LBN18.png" alt="">
+                                    <div class="swiper-slide-text">
+                                        <img src="./assets/images/Group 48095423.png" alt="">
+                                        <b>
+                                            jujung sukijan
+                                        </b>
+                                        <span>
+                                            Ibu Rumah Tangga
+                                        </span>
+                                        <p>
+                                            "Lorem ipsum dolor sit amet consectetur adipisicing elit. ratione distinctio
+                                            reiciendis sed nam totam?"
+                                        </p>
+                                        <img class="imgs" src="./assets/images/Group 48095424.png" alt="">
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide2">
+
+                                    <img class="img" src="./assets/images/unsplash_JaXs8Tk5Iww.png" alt="">
+                                    <div class="swiper-slide-text2">
+                                        <img src="./assets/images/Group 48095423 (1).png" alt="">
+                                        <b>
+                                            Ibuk Sukijan
+                                        </b>
+                                        <span>
+                                            Ibu Rumah Tangga
+                                        </span>
+                                        <p>
+                                            “Makasih Panto, aku sekarang berasa tinggal di apartment karena
+                                            barang-barang yang terlihat mewah“
+                                        </p>
+                                        <img class="imgs" src="./assets/images/Group 48095424.png" alt="">
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide2">
+
+                                    <img class="img" src="./assets/images/unsplash__HqHX3LBN18.png" alt="">
+                                    <div class="swiper-slide-text3">
+                                        <img src="./assets/images/Group 48095423.png" alt="">
+                                        <b>
+                                            Bang Upin
+                                        </b>
+                                        <span>
+                                            Pedagang Asongan
+                                        </span>
+                                        <p>
+                                            “Terimakasih banyak, kini ruanganku menjadi lebih mewah dan terlihat mahal“
+                                        </p>
+                                        <img class="imgs" src="./assets/images/Group 48095424.png" alt="">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide0">
+
+                                <div class="swiper-slide2">
+
+                                    <img class="img" src="./assets/images/unsplash__HqHX3LBN18.png" alt="">
+                                    <div class="swiper-slide-text">
+                                        <img src="./assets/images/Group 48095423.png" alt="">
+                                        <b>
+                                            Bang Upin
+                                        </b>
+                                        <span>
+                                            Pedagang Asongan
+                                        </span>
+                                        <p>
+                                            “Terimakasih banyak, kini ruanganku menjadi lebih mewah dan terlihat mahal“
+                                        </p>
+                                        <img class="imgs" src="./assets/images/Group 48095424.png" alt="">
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide2">
+
+                                    <img class="img" src="./assets/images/unsplash_JaXs8Tk5Iww.png" alt="">
+                                    <div class="swiper-slide-text2">
+                                        <img src="./assets/images/Group 48095423 (1).png" alt="">
+                                        <b>
+                                            Ibuk Sukijan
+                                        </b>
+                                        <span>
+                                            Ibu Rumah Tangga
+                                        </span>
+                                        <p>
+                                            “Makasih Panto, aku sekarang berasa tinggal di apartment karena
+                                            barang-barang yang terlihat mewah“
+                                        </p>
+                                        <img class="imgs" src="./assets/images/Group 48095424.png" alt="">
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide2">
+
+                                    <img class="img" src="./assets/images/unsplash__HqHX3LBN18.png" alt="">
+                                    <div class="swiper-slide-text3">
+                                        <img src="./assets/images/Group 48095423.png" alt="">
+                                        <b>
+                                            Bang Upin
+                                        </b>
+                                        <span>
+                                            Pedagang Asongan
+                                        </span>
+                                        <p>
+                                            “Terimakasih banyak, kini ruanganku menjadi lebih mewah dan terlihat mahal“
+                                        </p>
+                                        <img class="imgs" src="./assets/images/Group 48095424.png" alt="">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="swiper-button-next"><img src="./assets/icons/grommet-icons_form-next-link (1).png"
+                            alt=""></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+
+
+            </div>
+        </section>
+
     </main>
+    <footer>
+        <div class="footer-bottom">
+
+
+            <div class="footer-bottom-left">
+                <b>
+                    Panto
+                </b>
+                <p>
+                    The advantage of hiring a workspace with us is that givees you comfortable service and all-around
+                    facilities.
+                </p>
+            </div>
+            <div class="footer-bottom-right">
+                <b>
+                    Services
+                </b>
+                <p>
+                    Email Marketing
+                </p>
+                <p>
+                    Campaigns
+                </p>
+                <p>
+                    Branding
+                </p>
+            </div>
+            <div class="footer-bottom-right">
+                <b>
+                    Furniture
+                </b>
+                <p>
+                    Beds
+                </p>
+                <p>
+                    Chair
+                </p>
+                <p>
+                    All
+                </p>
+            </div>
+            <div class=" footer-bottom-right">
+                <b>
+                    Follow Us
+                </b>
+                <div class="footer-icons">
+                    <img src="./assets/icons/001-facebook.png" alt="">
+                    <p>
+                        Facebook
+                    </p>
+                </div>
+                <div class="footer-icons">
+                    <img src="./assets/icons/003-twitter.png" alt="">
+                    <p>
+                        Twitter
+                    </p>
+                </div>
+                <div class="footer-icons">
+                    <img src="./assets/icons/004-instagram.png" alt="">
+                    <p>
+                        Instagram
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom2">
+            <p>
+                Copyright © 2021
+            </p>
+            <div class="footer-bottom2-right">
+                <p>
+                    Terms & Conditions
+                </p>
+                <p>
+                    Privacy Policy
+                </p>
+            </div>
+        </div>
 
 
 
+    </footer>
 
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
     <script src="./js/app.js"></script>
     <script src="./js/add.js"></script>
